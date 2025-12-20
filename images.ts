@@ -10,10 +10,10 @@ const IMAGES = {
     hero: '/images/hero.jpg',
   },
   events: {
-    venue: '/images/venue.jpg',
+    venue: '/images/venue.png',
   },
   travel: {
-    hotel: '/images/hotel.jpg',
+    hotel: '/images/hotel.png',
   },
 };
 

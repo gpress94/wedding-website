@@ -8,7 +8,7 @@ const Layout: React.FC = () => {
   return (
     <div className="min-h-screen font-serif selection:bg-theme-accent/20 flex flex-col">
        {/* HEADER */}
-       <header className="pt-4 pb-2 md:pt-8 md:pb-4 relative overflow-hidden w-full">
+       <header className="pt-8 pb-4 md:pt-8 md:pb-4 relative overflow-hidden w-full">
         <div className="w-full max-w-6xl mx-auto px-4">
           
           {/* Flex container with equal-width side columns to keep center text perfectly centered */}
@@ -26,7 +26,7 @@ const Layout: React.FC = () => {
 
              {/* Center Text - Fixed visual center */}
              {/* Changed: flex-col (mobile) to md:flex-row (desktop) with gap adjustment */}
-             <div className="flex-shrink-0 flex flex-col md:flex-row items-center justify-center space-y-1 md:space-y-0 md:gap-4 text-center transition-all duration-300">
+             <div className="flex-shrink-0 flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:gap-4 text-center transition-all duration-300">
                 <h1 className="font-script text-[38px] md:text-[42px] text-theme-text leading-tight whitespace-nowrap">Nicolle</h1>
                 <span className="font-script text-[16px] md:text-[22px] text-theme-accent md:pt-2">and</span>
                 <h1 className="font-script text-[38px] md:text-[42px] text-theme-text leading-tight whitespace-nowrap">Greg</h1>
