@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolle & Greg - 10.10.2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              // Added 'Nazeefa' as primary, 'Pinyon Script' as fallback
+              script: ['Nazeefa', 'Pinyon Script', 'cursive'],
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            colors: {
+              theme: {
+                text: '#614f46', // rgb(97, 79, 70)
+                bg: '#f5eee0',   // rgb(245, 238, 224)
+                accent: '#8c7668',
+              },
+              sage: {
+                50: '#f4f7f5',
+                100: '#e3ebe6',
+                500: '#56846f',
+                600: '#426958',
+              },
+              cream: '#fcfbf9',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* 
+         Font Loading Configuration:
+         Checks both /fonts/ folder and root / folder.
+         Checks both capitalized and lowercase filenames.
+         Checks both .ttf and .otf extensions.
+      */
+      @font-face {
+        font-family: 'Nazeefa';
+        src: url('/fonts/Nazeefa.otf') format('opentype'),
+             url('/fonts/Nazeefa.ttf') format('truetype'),
+             url('/fonts/nazeefa.ttf') format('truetype'),
+             url('/fonts/nazeefa.otf') format('opentype'),
+             url('/Nazeefa.otf') format('opentype'),
+             url('/Nazeefa.ttf') format('truetype'),
+             url('/nazeefa.ttf') format('truetype'),
+             url('/nazeefa.otf') format('opentype'),
+             url('/Nazeefa.TTF') format('truetype'),
+             url('/nazeefa.TTF') format('truetype'),
+             url('/nazeefa.otf') format('opentype'),
+             url('/Nazeefa.TTF') format('truetype'),
+             url('/nazeefa.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #f5eee0;
+        color: #614f46;
+      }
+      .paper-divider {
+        height: 2px;
+        background-image: linear-gradient(to right, transparent, #614f46, transparent);
+        opacity: 0.2;
+        margin: 2rem auto;
+        width: 80%;
+      }
+      /* Torn Paper Edge Effect */
+      .paper-edge-top {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        height: 11px;
+        background-color: currentColor;
+        z-index: 10;
+        /* Jagged SVG mask */
+        -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='10' viewBox='0 0 30 10' preserveAspectRatio='none'%3E%3Cpath d='M0 10 L0 5 L2 2 L5 6 L8 1 L12 5 L15 2 L19 6 L22 3 L25 7 L28 2 L30 5 L30 10 Z' fill='black'/%3E%3C/svg%3E");
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='10' viewBox='0 0 30 10' preserveAspectRatio='none'%3E%3Cpath d='M0 10 L0 5 L2 2 L5 6 L8 1 L12 5 L15 2 L19 6 L22 3 L25 7 L28 2 L30 5 L30 10 Z' fill='black'/%3E%3C/svg%3E");
+        -webkit-mask-repeat: repeat-x;
+        mask-repeat: repeat-x;
+        -webkit-mask-size: 20px 100%;
+        mask-size: 20px 100%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?external=react,react-dom",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
