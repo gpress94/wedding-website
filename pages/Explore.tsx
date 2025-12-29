@@ -22,7 +22,6 @@ const Explore: React.FC = () => {
                             <li>Bruce Museum</li>
                             <li>Explore Rye Village</li>
                             <li>Rye Playland Beach</li>
-                            <li>Trail around Foundation House</li>
                         </ul>
                     </div>
 
@@ -33,6 +32,7 @@ const Explore: React.FC = () => {
                             <li>Babcock Preserve Loop</li>
                             <li>Greenwich Audubon Center Trail</li>
                             <li>Bruce Park Loop</li>
+                            <li>Foundation House</li>
                         </ul>
                     </div>
 
