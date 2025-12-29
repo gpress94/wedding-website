@@ -12,32 +12,33 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Travel', href: '/travel' },
   { label: 'Registry', href: '/registry' },
   { label: 'FAQ', href: '/faq' },
+  { label: 'Explore', href: '/explore' },
 ];
 
 export const EVENTS: EventDetails[] = [
   {
-    title: "Welcome Drinks",
-    date: "Friday, October 9, 2026",
-    time: "7:00 PM - 9:00 PM",
-    location: "TBD",
-    address: "Greenwich, CT",
-    description: "Kick off the weekend with cocktails and light bites."
-  },
-  {
     title: "The Ceremony",
     date: "Saturday, October 10, 2026",
-    time: "4:00 PM",
+    time: "4:30 PM - 5:00 PM",
     location: "The Foundation House",
     address: "124 Old Mill Road, Greenwich, CT 06831",
-    description: "Join us for our vows. Please arrive by 3:30 PM."
+    description: "Join us for our vows."
+  },
+  {
+    title: "Cocktail Hour",
+    date: "Saturday, October 10, 2026",
+    time: "5:00 PM - 6:00 PM",
+    location: "The Foundation House",
+    address: "124 Old Mill Road, Greenwich, CT 06831",
+    description: "Drinks and hors d'oeuvres on the terrace."
   },
   {
     title: "Reception",
     date: "Saturday, October 10, 2026",
-    time: "5:30 PM - 11:00 PM",
+    time: "6:00 PM - 10:00 PM",
     location: "The Foundation House",
     address: "124 Old Mill Road, Greenwich, CT 06831",
-    description: "Dinner, dancing, and celebration immediately following the ceremony."
+    description: "Dinner, dancing, and celebration."
   }
 ];
 
@@ -47,43 +48,78 @@ export const ACCOMMODATIONS: Accommodation[] = [
     address: "500 Steamboat Rd, Greenwich, CT 06830",
     phone: "(203) 661-9800",
     website: "#",
-    groupCode: "NG2026",
-    note: "Luxury waterfront accommodations. Shuttle pick-up location."
+    groupCode: "TBD",
+    note: "Luxury waterfront accommodations."
   },
   {
     name: "Hyatt Regency Greenwich",
     address: "1800 E Putnam Ave, Old Greenwich, CT 06870",
     phone: "(203) 637-1234",
     website: "#",
-    groupCode: "NICGREG",
-    note: "Convenient location with shuttle service."
+    groupCode: "TBD",
+    note: "Convenient location."
   }
 ];
 
 export const FAQS: FAQItem[] = [
   {
-    question: "When is the RSVP deadline?",
-    answer: "Please RSVP by September 1, 2026 so we can have an accurate headcount."
-  },
-  {
     question: "What is the dress code?",
     answer: "We'd love to see you in Black Tie Optional. Tuxes and gowns are welcome, as are suits and cocktail dresses."
   },
   {
-    question: "Are kids welcome?",
-    answer: "We love your little ones, but this will be an adults-only celebration."
+    question: "How do I get to the venue?",
+    answer: "Please check the Travel page for detailed directions."
   },
   {
-    question: "Is there parking?",
+    question: "Are there accommodations nearby?",
+    answer: "Yes, we have room blocks at local hotels. Please see the Travel page for details."
+  },
+  {
+    question: "Will transportation be provided?",
+    answer: "TBD"
+  },
+  {
+    question: "Is there parking available near your wedding venue?",
     answer: "Yes, valet parking is complimentary at the venue."
+  },
+  {
+    question: "Where are you registered?",
+    answer: "TBD"
+  },
+  {
+    question: "What is on the menu?",
+    answer: "TBD"
+  },
+  {
+    question: "What will the weather be like this time of year?",
+    answer: "In early October, Greenwich typically experiences crisp, cool autumn weather with highs around 65°F (18°C) and lows around 45°F (7°C)."
+  },
+  {
+    question: "What’s the best airport to use?",
+    answer: "Westchester County Airport (HPN) is the closest option. However, LaGuardia (LGA), JFK, and Newark (EWR) are all viable options depending on your flight preferences."
+  },
+  {
+    question: "What date should I RSVP by?",
+    answer: "TBD"
+  },
+  {
+    question: "What is the wedding day itinerary?",
+    answer: "Please check the Events page for the full schedule."
   }
 ];
 
 export const STORY_TEXT = `
-  We met in the most unexpected way—reaching for the same coffee order at a busy downtown cafe. 
-  What started as an awkward laugh turned into a conversation that lasted for hours. 
-  Five years, three apartments, and two dogs later, Greg proposed on a quiet hike in the mountains 
-  where we had our first anniversary trip. We are so excited to celebrate our next chapter with you.
+  We met in Stamford in the summer of 2021 and quickly discovered how much we enjoyed the simple things together. 
+  Walks around the local parks, annual weekend trips to the Hudson Valley, and quiet movies & game nights became 
+  the foundation of our relationship.
+
+  Along the way, those everyday moments were filled with bigger adventures, ski trips with friends, family vacations 
+  in Florida, and a trip to Paris. Still always appreciating the comfort of coming home together.
+
+  In July 2025, Greg proposed on a walk at Foundation House, a place that had become special to us and one we’re 
+  thrilled to return to as we celebrate our wedding.
+
+  We can’t wait to share this next chapter with our family and friends.
 `;
 
 export const FAQ_CONTEXT_FOR_AI = `

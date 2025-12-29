@@ -10,6 +10,7 @@ import Events from './pages/Events';
 import Travel from './pages/Travel';
 import Registry from './pages/Registry';
 import Faq from './pages/Faq';
+import Explore from './pages/Explore';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
             <Route path="travel" element={<Travel />} />
             <Route path="registry" element={<Registry />} />
             <Route path="faq" element={<Faq />} />
+            <Route path="explore" element={<Explore />} />
           </Route>
         </Routes>
       </HashRouter>
