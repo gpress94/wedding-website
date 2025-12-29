@@ -109,15 +109,16 @@ export const FAQS: FAQItem[] = [
 ];
 
 export const STORY_TEXT = `
-  We met in Stamford in the summer of 2021 and quickly discovered how much we enjoyed the simple things together. 
-  Walks around the local parks, annual weekend trips to the Hudson Valley, and quiet movies & game nights became 
-  the foundation of our relationship.
+  We met in Stamford in the summer of 2021, and from the very beginning, it was the simple moments that brought us together. 
+  Long walks and hikes through local parks with Minnie, annual weekend escapes to the Hudson Valley, and quiet nights filled 
+  with movies and games quickly became the rhythm of our days and the foundation of our relationship.
 
-  Along the way, those everyday moments were filled with bigger adventures, ski trips with friends, family vacations 
-  in Florida, and a trip to Paris. Still always appreciating the comfort of coming home together.
+  Along the way, those everyday moments were filled with bigger adventures, ski trips with friends, family vacations to 
+  Florida and Michigan, and travels that took us around the world. No matter how far we went, what mattered most was 
+  always the comfort of coming home together.
 
-  In July 2025, Greg proposed on a walk at Foundation House, a place that had become special to us and one we’re 
-  thrilled to return to as we celebrate our wedding.
+  In July 2025, Greg proposed on a walk at Foundation House, a place that had become special to us and one we’re thrilled 
+  to return to as we celebrate our wedding.
 
   We can’t wait to share this next chapter with our family and friends.
 `;
