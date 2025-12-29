@@ -17,7 +17,7 @@ const HomeSection: React.FC = () => {
 
   return (
     <section id={SectionId.HOME} className="w-full pt-4 pb-16">
-      
+
       {/* Hero Photo - Contained */}
       <div className="max-w-5xl mx-auto px-6 mb-12">
         {/* 
@@ -25,33 +25,33 @@ const HomeSection: React.FC = () => {
            is determined by the natural aspect ratio of the image itself. 
            No cropping (object-cover) or fixed heights are applied.
         */}
-        <div className="relative w-full overflow-hidden shadow-xl bg-theme-text/5">
-           <img 
-             src={IMAGES.home.hero}
-             alt="Nicolle and Greg"
-             className="w-full h-auto block opacity-90 hover:scale-105 transition-transform duration-[20s]"
-             onError={(e) => {
-               const target = e.target as HTMLImageElement;
-               target.style.display = 'none';
-               // Add a fallback height so the container doesn't collapse if image fails
-               target.parentElement?.classList.add('flex', 'items-center', 'justify-center', 'h-96');
-               const errorMsg = document.createElement('p');
-               errorMsg.innerText = 'Image not found: ' + IMAGES.home.hero;
-               errorMsg.className = 'text-theme-text/50 font-sans text-sm p-4';
-               target.parentElement?.appendChild(errorMsg);
-             }}
-           />
+        <div className="relative w-full shadow-2xl bg-white p-3 md:p-5 transform rotate-1 max-w-4xl mx-auto">
+          <img
+            src={IMAGES.home.hero}
+            alt="Nicolle and Greg"
+            className="w-full h-auto block filter sepia-[0.25] contrast-[1.05]"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              // Add a fallback height so the container doesn't collapse if image fails
+              target.parentElement?.classList.add('flex', 'items-center', 'justify-center', 'h-96');
+              const errorMsg = document.createElement('p');
+              errorMsg.innerText = 'Image not found: ' + IMAGES.home.hero;
+              errorMsg.className = 'text-theme-text/50 font-sans text-sm p-4';
+              target.parentElement?.appendChild(errorMsg);
+            }}
+          />
         </div>
       </div>
 
       {/* Date & Countdown */}
       <div className="text-center mb-20 fade-in-up px-4">
-         <h2 className="text-3xl md:text-4xl font-serif italic mb-4 text-theme-text">{WEDDING_DATE}</h2>
-         <div className="inline-block border-t border-b border-theme-text/30 py-2 px-6">
-           <p className="text-sm md:text-base uppercase tracking-[0.3em] font-sans">
-             {daysToGo} Days To Go
-           </p>
-         </div>
+        <h2 className="text-3xl md:text-4xl font-serif italic mb-4 text-theme-text">{WEDDING_DATE}</h2>
+        <div className="inline-block border-t border-b border-theme-text/30 py-2 px-6">
+          <p className="text-sm md:text-base uppercase tracking-[0.3em] font-sans">
+            {daysToGo} Days To Go
+          </p>
+        </div>
       </div>
 
       {/* Our Story */}
